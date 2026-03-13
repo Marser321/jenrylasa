@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 375">
     <style>
-        .light-blue { fill: #1B75BC; stroke: #1B75BC; }
-        .navy { fill: #1F2A5C; stroke: #1F2A5C; }
-        .text-large { font-family: 'Cinzel', serif; font-size: 89.19px; font-weight: 700; fill: #1F2A5C; }
-        .text-small { font-family: 'Inter', sans-serif; font-size: 16.99px; font-weight: 700; fill: #ffffff; letter-spacing: 0.11em; }
+        .light-blue { fill: #C9A227; stroke: #C9A227; }
+        .navy { fill: #4A3728; stroke: #4A3728; }
+        .text-large { font-family: 'Cinzel', serif; font-size: 89.19px; font-weight: 700; fill: #4A3728; }
+        .text-small { font-family: 'Inter', sans-serif; font-size: 16.99px; font-weight: 700; fill: #ffffff; letter-spacing: 0.25em; text-transform: uppercase; }
     </style>
     <!-- Background Rect -->
-    <rect x="40" y="313.12" width="295" height="26.3" fill="#1B75BC" />
+    <rect x="20" y="313.12" width="335" height="26.3" fill="#C9A227" />
     <!-- Subtext -->
-    <text class="text-small" transform="translate(53 331.87)">K I T C H E N   A N D   C L O S E T</text>
+    <text x="187.5" y="331.87" class="text-small" text-anchor="middle">KITCHEN AND CLOSET</text>
     <!-- Center Logo Mark -->
     <polyline class="navy" stroke-width="1" points="187.55 212.51 187.55 190.57 187.41 190.57 165.61 212.51 187.55 212.51" />
     <polygon class="light-blue" stroke-width="1" points="165.61 212.51 187.41 190.57 165.61 190.57 165.61 212.51" />
@@ -22,8 +22,5 @@
     <polyline class="light-blue" stroke-width="2" points="109.26 36.42 109.26 153.58 190.98 80.32 190.98 118.52 78.77 219.12 78.77 36.42 109.26 36.42" />
     <polyline class="navy" stroke-width="2" points="120.42 88.86 120.42 127.06 190.98 63.8 190.98 25.6 120.42 88.86" />
     <!-- Main Text: LASA -->
-    <text class="text-large" transform="translate(81.5 288.8)">L</text>
-    <text class="text-large" transform="translate(134.5 288.8)">A</text>
-    <text class="text-large" transform="translate(187.5 288.8)">S</text>
-    <text class="text-large" transform="translate(240.5 288.8)">A</text>
+    <text x="187.5" y="288.8" class="text-large" text-anchor="middle">LASA</text>
 </svg>

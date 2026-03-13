@@ -65,39 +65,39 @@ export function StaffFormModal({ isOpen, onClose, member }: StaffFormModalProps)
 
                     <div className="space-y-2">
                         <label className="text-sm font-medium text-white/70 flex items-center gap-2">
-                            <User className="w-4 h-4 text-[var(--accent-blue)]" /> Nombre Completo
+                            <User className="w-4 h-4 text-[var(--accent-gold)]" /> Nombre Completo
                         </label>
                         <input
                             name="name"
                             defaultValue={member?.name}
                             required
                             placeholder="Ej: Roberto Lasa"
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/20 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/20 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                         />
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
                             <label className="text-sm font-medium text-white/70 flex items-center gap-2">
-                                <Hammer className="w-4 h-4 text-[var(--accent-blue)]" /> Puesto / Rol
+                                <Hammer className="w-4 h-4 text-[var(--accent-gold)]" /> Puesto / Rol
                             </label>
                             <input
                                 name="role"
                                 defaultValue={member?.role}
                                 required
                                 placeholder="Ej: Maestro Carpintero"
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/20 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/20 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         </div>
                         <div className="space-y-2">
                             <label className="text-sm font-medium text-white/70 flex items-center gap-2">
-                                <ShieldCheck className="w-4 h-4 text-[var(--accent-blue)]" /> Especialidad
+                                <ShieldCheck className="w-4 h-4 text-[var(--accent-gold)]" /> Especialidad
                             </label>
                             <input
                                 name="specialty"
                                 defaultValue={member?.specialty || ''}
                                 placeholder="Ej: Diseño & Estructuras"
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/20 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/20 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         </div>
                     </div>
@@ -105,13 +105,13 @@ export function StaffFormModal({ isOpen, onClose, member }: StaffFormModalProps)
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
                             <label className="text-sm font-medium text-white/70 flex items-center gap-2">
-                                <Clock className="w-4 h-4 text-[var(--accent-blue)]" /> Experiencia
+                                <Clock className="w-4 h-4 text-[var(--accent-gold)]" /> Experiencia
                             </label>
                             <input
                                 name="experience"
                                 defaultValue={member?.experience || ''}
                                 placeholder="Ej: 25 años"
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/20 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/20 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         </div>
                         <div className="space-y-2">
@@ -119,7 +119,7 @@ export function StaffFormModal({ isOpen, onClose, member }: StaffFormModalProps)
                             <select
                                 name="status"
                                 defaultValue={member?.status || 'Activo'}
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors appearance-none"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors appearance-none"
                             >
                                 <option value="Activo" className="bg-zinc-900">Activo</option>
                                 <option value="Inactivo" className="bg-zinc-900">Inactivo</option>
@@ -138,7 +138,7 @@ export function StaffFormModal({ isOpen, onClose, member }: StaffFormModalProps)
                         <button
                             type="submit"
                             disabled={loading}
-                            className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-blue)] text-black rounded-lg hover:bg-[var(--accent-blue)]/90 transition-colors font-semibold shadow-lg disabled:opacity-50 order-1 sm:order-2"
+                            className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-gold)] text-black rounded-lg hover:bg-[var(--accent-gold)]/90 transition-colors font-semibold shadow-lg disabled:opacity-50 order-1 sm:order-2"
                         >
                             <Save className="w-5 h-5" />
                             {loading ? 'Guardando...' : 'Guardar Integrante'}

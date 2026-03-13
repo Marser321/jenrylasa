@@ -58,7 +58,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 pointer-events-none">
           <div className="sticky top-0 h-screen w-full flex items-center justify-end p-6 md:p-20">
-            <GlassCard className="pointer-events-auto max-w-md ml-auto border-l-2 border-l-[var(--accent-blue)]">
+            <GlassCard className="pointer-events-auto max-w-md ml-auto border-l-2 border-l-[var(--accent-gold)]">
               <ScrollTextReveal>
                 <p className="text-overline mb-4">Our Philosophy</p>
               </ScrollTextReveal>
@@ -90,7 +90,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 pointer-events-none">
           <div className="sticky top-0 h-screen w-full flex items-center justify-start p-6 md:p-20">
-            <GlassCard className="pointer-events-auto max-w-md border-r-2 border-r-[var(--accent-blue)]">
+            <GlassCard className="pointer-events-auto max-w-md border-r-2 border-r-[var(--accent-gold)]">
               <ScrollTextReveal>
                 <p className="text-overline mb-4">Kitchens</p>
               </ScrollTextReveal>
@@ -122,7 +122,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 pointer-events-none">
           <div className="sticky top-0 h-screen w-full flex items-end justify-center p-6 md:p-20 pb-20">
-            <GlassCard className="pointer-events-auto max-w-2xl text-center border-t-2 border-t-[var(--accent-blue)]">
+            <GlassCard className="pointer-events-auto max-w-2xl text-center border-t-2 border-t-[var(--accent-gold)]">
               <ScrollTextReveal>
                 <p className="text-overline mb-4">Closets</p>
               </ScrollTextReveal>

@@ -68,7 +68,7 @@ export default function EditClientPage({ params }: { params: { id: string } }) {
     if (loading) {
         return (
             <div className="py-20 flex flex-col items-center justify-center gap-3 text-white/40">
-                <Loader2 className="w-8 h-8 animate-spin text-[var(--accent-blue)]" />
+                <Loader2 className="w-8 h-8 animate-spin text-[var(--accent-gold)]" />
                 <p>Cargando datos del cliente...</p>
             </div>
         );
@@ -102,7 +102,7 @@ export default function EditClientPage({ params }: { params: { id: string } }) {
                             required
                             value={fullName}
                             onChange={(e) => setFullName(e.target.value)}
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                         />
                     </div>
 
@@ -114,7 +114,7 @@ export default function EditClientPage({ params }: { params: { id: string } }) {
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                         />
                     </div>
 
@@ -126,7 +126,7 @@ export default function EditClientPage({ params }: { params: { id: string } }) {
                             type="tel"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                         />
                     </div>
 
@@ -138,7 +138,7 @@ export default function EditClientPage({ params }: { params: { id: string } }) {
                             value={address}
                             onChange={(e) => setAddress(e.target.value)}
                             rows={2}
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors resize-none"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors resize-none"
                         />
                     </div>
 
@@ -152,7 +152,7 @@ export default function EditClientPage({ params }: { params: { id: string } }) {
                         <button
                             type="submit"
                             disabled={saving}
-                            className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--accent-blue)] text-black font-semibold hover:bg-[var(--accent-blue)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] disabled:opacity-50"
+                            className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--accent-gold)] text-black font-semibold hover:bg-[var(--accent-gold)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] disabled:opacity-50"
                         >
                             {saving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
                             {saving ? 'Guardando...' : 'Guardar Cambios'}

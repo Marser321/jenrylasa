@@ -135,7 +135,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                             value={customerName}
                             onChange={(e) => setCustomerName(e.target.value)}
                             placeholder="Ej: Juan Pérez"
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                         />
                     </div>
 
@@ -150,7 +150,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                             value={projectDescription}
                             onChange={(e) => setProjectDescription(e.target.value)}
                             placeholder="Ej: Cocina Americana, Vestidor Principal..."
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                         />
                     </div>
 
@@ -165,7 +165,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                                 required
                                 value={scheduledDate}
                                 onChange={(e) => setScheduledDate(e.target.value)}
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         </div>
                         <div className="space-y-2">
@@ -177,7 +177,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                                 required
                                 value={scheduledTime}
                                 onChange={(e) => setScheduledTime(e.target.value)}
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         </div>
                     </div>
@@ -192,7 +192,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                                 required
                                 value={expert}
                                 onChange={(e) => setExpert(e.target.value)}
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             >
                                 <option value="" className="bg-[#111]">Seleccionar experto...</option>
                                 {experts.map(exp => (
@@ -208,7 +208,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                                 value={expert}
                                 onChange={(e) => setExpert(e.target.value)}
                                 placeholder="Nombre del experto"
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         )}
                     </div>
@@ -223,7 +223,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                             value={location}
                             onChange={(e) => setLocation(e.target.value)}
                             placeholder="Ej: Punta Carretas, Carrasco..."
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                         />
                     </div>
 
@@ -234,7 +234,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                             <select
                                 value={status}
                                 onChange={(e) => setStatus(e.target.value)}
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             >
                                 <option value="Pendiente" className="bg-[#111]">Pendiente</option>
                                 <option value="Confirmada" className="bg-[#111]">Confirmada</option>
@@ -254,7 +254,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                             onChange={(e) => setNotes(e.target.value)}
                             rows={3}
                             placeholder="Observaciones, instrucciones especiales..."
-                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors resize-none"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors resize-none"
                         />
                     </div>
 
@@ -270,7 +270,7 @@ export function ConsultationFormModal({ isOpen, onClose, consultation, selectedD
                         <button
                             type="submit"
                             disabled={isSaving}
-                            className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--accent-blue)] text-black font-semibold hover:bg-[var(--accent-blue)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] disabled:opacity-50"
+                            className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--accent-gold)] text-black font-semibold hover:bg-[var(--accent-gold)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] disabled:opacity-50"
                         >
                             {isSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
                             {isSaving ? 'Guardando...' : isEditing ? 'Actualizar' : 'Agendar Visita'}

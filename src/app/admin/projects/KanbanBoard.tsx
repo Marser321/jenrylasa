@@ -100,9 +100,9 @@ export default function KanbanBoard({ initialProjects }: { initialProjects: Proj
     if (!isMounted) return <div className="p-8 text-center text-white/50 animate-pulse">Cargando Tablero Ejecutivo...</div>;
 
     const columnConfig: Array<{ id: keyof BoardData; title: string; color: string; border: string }> = [
-        { id: 'draft', title: 'Cotización (Draft)', color: 'bg-yellow-500/10 text-yellow-400', border: 'border-yellow-500/20' },
-        { id: 'in_progress', title: 'En Producción', color: 'bg-blue-500/10 text-blue-400', border: 'border-blue-500/20' },
-        { id: 'completed', title: 'Completado / Instalado', color: 'bg-green-500/10 text-green-400', border: 'border-green-500/20' }
+        { id: 'draft', title: 'Cotización (Draft)', color: 'bg-amber-500/10 text-amber-500', border: 'border-amber-500/20' },
+        { id: 'in_progress', title: 'En Producción', color: 'bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]', border: 'border-[var(--accent-gold)]/20' },
+        { id: 'completed', title: 'Completado / Instalado', color: 'bg-emerald-500/10 text-emerald-400', border: 'border-emerald-500/20' }
     ];
 
     return (
@@ -111,7 +111,7 @@ export default function KanbanBoard({ initialProjects }: { initialProjects: Proj
                 <div>
                     <h1 className="text-3xl font-display font-medium text-white flex items-center gap-3">
                         Tablero de Proyectos
-                        {isSaving && <Loader2 className="w-4 h-4 text-[var(--accent-blue)] animate-spin" />}
+                        {isSaving && <Loader2 className="w-4 h-4 text-[var(--accent-gold)] animate-spin" />}
                     </h1>
                     <p className="text-white/60 text-sm mt-1">
                         Arrastra las tarjetas para cambiar el estado de producción de tus obras.
@@ -162,7 +162,7 @@ export default function KanbanBoard({ initialProjects }: { initialProjects: Proj
                                                         className={`mb-3 outline-none ${snapshot.isDragging ? 'z-50' : ''}`}
                                                     >
                                                         <GlassCard
-                                                            className={`p-4 border-white/10 hover:border-[var(--accent-blue)]/40 hover:bg-white/10 transition-all ${snapshot.isDragging ? 'shadow-2xl shadow-[var(--accent-blue)]/20 rotate-2 border-[var(--accent-blue)]/50' : ''
+                                                            className={`p-4 border-white/10 hover:border-[var(--accent-gold)]/40 hover:bg-white/10 transition-all ${snapshot.isDragging ? 'shadow-2xl shadow-[var(--accent-gold)]/20 rotate-2 border-[var(--accent-gold)]/50' : ''
                                                                 }`}
                                                         >
                                                             <div className="flex items-start gap-2">
@@ -180,7 +180,7 @@ export default function KanbanBoard({ initialProjects }: { initialProjects: Proj
                                                                     {project.clients && (
                                                                         <Link
                                                                             href={`/admin/clients/${project.client_id}`}
-                                                                            className="text-white/40 text-xs mt-1 block truncate hover:text-[var(--accent-blue)] transition-colors"
+                                                                            className="text-white/40 text-xs mt-1 block truncate hover:text-[var(--accent-gold)] transition-colors"
                                                                         >
                                                                             👤 {project.clients.full_name}
                                                                         </Link>

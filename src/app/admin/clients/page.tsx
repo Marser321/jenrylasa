@@ -64,7 +64,7 @@ export default function ClientsPage() {
                 </div>
                 <Link
                     href="/admin/clients/new"
-                    className="flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-blue)] text-black rounded-lg hover:bg-[var(--accent-blue)]/90 transition-colors font-semibold shadow-[0_0_15px_rgba(209,164,88,0.2)] w-full sm:w-auto"
+                    className="flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-gold)] text-black rounded-lg hover:bg-[var(--accent-gold)]/90 transition-colors font-semibold shadow-[0_0_15px_rgba(209,164,88,0.2)] w-full sm:w-auto"
                 >
                     <Plus className="w-4 h-4" /> Nuevo Cliente
                 </Link>
@@ -79,7 +79,7 @@ export default function ClientsPage() {
                             placeholder="Buscar por nombre, email o teléfono..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                         />
                     </div>
                 </div>
@@ -87,7 +87,7 @@ export default function ClientsPage() {
                 <div className="overflow-x-auto">
                     {loading ? (
                         <div className="py-20 flex flex-col items-center justify-center gap-3 text-white/40">
-                            <Loader2 className="w-8 h-8 animate-spin text-[var(--accent-blue)]" />
+                            <Loader2 className="w-8 h-8 animate-spin text-[var(--accent-gold)]" />
                             <p>Cargando clientes...</p>
                         </div>
                     ) : filteredClients.length > 0 ? (
@@ -106,7 +106,7 @@ export default function ClientsPage() {
                                     <tr key={client.id} className="border-b border-white/5 hover:bg-white/5 transition-colors group">
                                         <td className="py-4 px-4">
                                             <div className="flex items-center gap-3">
-                                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--accent-blue)] to-yellow-700 flex items-center justify-center text-black font-bold shadow-lg shadow-black/20">
+                                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--accent-gold)] to-yellow-700 flex items-center justify-center text-black font-bold shadow-lg shadow-black/20">
                                                     {client.full_name?.charAt(0).toUpperCase() || 'C'}
                                                 </div>
                                                 <div>
@@ -118,10 +118,10 @@ export default function ClientsPage() {
                                         <td className="py-4 px-4">
                                             <div className="flex flex-col gap-1">
                                                 {client.email ? (
-                                                    <a href={`mailto:${client.email}`} className="text-sm text-white/80 hover:text-[var(--accent-blue)] transition-colors">{client.email}</a>
+                                                    <a href={`mailto:${client.email}`} className="text-sm text-white/80 hover:text-[var(--accent-gold)] transition-colors">{client.email}</a>
                                                 ) : <span className="text-sm text-white/40">Sin email</span>}
                                                 {client.phone ? (
-                                                    <a href={`tel:${client.phone}`} className="text-sm text-white/60 hover:text-[var(--accent-blue)] transition-colors">{client.phone}</a>
+                                                    <a href={`tel:${client.phone}`} className="text-sm text-white/60 hover:text-[var(--accent-gold)] transition-colors">{client.phone}</a>
                                                 ) : <span className="text-sm text-white/40">Sin teléfono</span>}
                                             </div>
                                         </td>
@@ -162,7 +162,7 @@ export default function ClientsPage() {
                             <p className="text-white/60 mb-6 max-w-sm mx-auto">Comienza agregando tu primer cliente para empezar a gestionar sus proyectos y cotizaciones.</p>
                             <Link
                                 href="/admin/clients/new"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent-blue)] text-black rounded-lg hover:bg-[var(--accent-blue)]/90 transition-colors font-semibold"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent-gold)] text-black rounded-lg hover:bg-[var(--accent-gold)]/90 transition-colors font-semibold"
                             >
                                 <Plus className="w-5 h-5" /> Agregar Mi Primer Cliente
                             </Link>

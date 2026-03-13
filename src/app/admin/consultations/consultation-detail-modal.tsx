@@ -81,7 +81,7 @@ export function ConsultationDetailModal({ isOpen, consultation, onClose, onEdit 
             {/* Modal */}
             <div className="relative bg-[#111] border border-white/10 rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl">
                 {/* Header */}
-                <div className="bg-gradient-to-r from-[var(--accent-blue)]/10 to-transparent border-b border-white/10 p-5 flex justify-between items-start">
+                <div className="bg-gradient-to-r from-[var(--accent-gold)]/10 to-transparent border-b border-white/10 p-5 flex justify-between items-start">
                     <div>
                         <h2 className="text-xl font-display text-white">{consultation.customer_name}</h2>
                         <span className={`inline-block mt-2 text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider font-semibold ${statusInfo.bgColor} ${statusInfo.color} border ${statusInfo.borderColor}`}>
@@ -100,14 +100,14 @@ export function ConsultationDetailModal({ isOpen, consultation, onClose, onEdit 
                 <div className="p-5 space-y-4">
                     <div className="grid grid-cols-2 gap-4">
                         <div className="flex items-start gap-3">
-                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><Hammer className="w-4 h-4" /></div>
+                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><Hammer className="w-4 h-4" /></div>
                             <div>
                                 <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Proyecto</p>
                                 <p className="text-sm text-white">{consultation.project_description}</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-3">
-                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><User className="w-4 h-4" /></div>
+                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><User className="w-4 h-4" /></div>
                             <div>
                                 <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Experto</p>
                                 <p className="text-sm text-white">{consultation.expert}</p>
@@ -117,14 +117,14 @@ export function ConsultationDetailModal({ isOpen, consultation, onClose, onEdit 
 
                     <div className="grid grid-cols-2 gap-4">
                         <div className="flex items-start gap-3">
-                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><Calendar className="w-4 h-4" /></div>
+                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><Calendar className="w-4 h-4" /></div>
                             <div>
                                 <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Fecha</p>
                                 <p className="text-sm text-white capitalize">{formatDate(consultation.scheduled_date)}</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-3">
-                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><Clock className="w-4 h-4" /></div>
+                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><Clock className="w-4 h-4" /></div>
                             <div>
                                 <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Hora</p>
                                 <p className="text-sm text-white">{formatTime(consultation.scheduled_time)}</p>
@@ -134,7 +134,7 @@ export function ConsultationDetailModal({ isOpen, consultation, onClose, onEdit 
 
                     {consultation.location && (
                         <div className="flex items-start gap-3">
-                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><MapPin className="w-4 h-4" /></div>
+                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><MapPin className="w-4 h-4" /></div>
                             <div>
                                 <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Ubicación</p>
                                 <p className="text-sm text-white">{consultation.location}</p>
@@ -144,7 +144,7 @@ export function ConsultationDetailModal({ isOpen, consultation, onClose, onEdit 
 
                     {consultation.notes && (
                         <div className="flex items-start gap-3">
-                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><FileText className="w-4 h-4" /></div>
+                            <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><FileText className="w-4 h-4" /></div>
                             <div>
                                 <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Notas</p>
                                 <p className="text-sm text-white/80 leading-relaxed">{consultation.notes}</p>

@@ -62,7 +62,7 @@ export function Header() {
     ];
 
     // IMPORTANTE: El early return para /admin DEBE ir después de todos los hooks.
-    if (pathname?.startsWith('/admin')) {
+    if (pathname?.startsWith('/admin') || pathname?.startsWith('/invoice')) {
         return null;
     }
 

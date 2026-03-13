@@ -34,27 +34,27 @@ export default async function AdminDashboard() {
                     <h1 className="text-4xl font-display font-medium text-white mb-2 tracking-tight">Bienvenido, Admin</h1>
                     <p className="text-white/50">Resumen general de Lasa Kitchens & Closets</p>
                 </div>
-                <Link href="/admin/consultations" className="flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--accent-blue)] text-black font-semibold hover:scale-105 transition-transform w-full sm:w-auto justify-center">
+                <Link href="/admin/consultations" className="flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--accent-gold)] text-black font-semibold hover:scale-105 transition-transform w-full sm:w-auto justify-center">
                     <Plus className="w-5 h-5" /> Nueva Consulta
                 </Link>
             </div>
 
             {/* Tarjetas principales con datos reales */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <GlassCard className="p-6 border-white/5 bg-gradient-to-br from-black/50 to-blue-500/5">
+                <GlassCard className="p-6 border-white/5 bg-gradient-to-br from-black/50 to-amber-500/5">
                     <div className="flex items-center gap-3 mb-2">
-                        <div className="p-2 bg-blue-500/20 rounded-lg text-blue-400"><Hammer className="w-5 h-5" /></div>
+                        <div className="p-2 bg-amber-500/20 rounded-lg text-amber-400"><Hammer className="w-5 h-5" /></div>
                         <h3 className="text-white/40 uppercase tracking-widest text-xs">Proyectos Activos</h3>
                     </div>
                     <p className="text-4xl font-light text-white mt-2">{activeProjects}</p>
                 </GlassCard>
 
-                <GlassCard className="p-6 border-white/5 bg-gradient-to-br from-black/50 to-[var(--accent-blue)]/5">
+                <GlassCard className="p-6 border-white/5 bg-gradient-to-br from-black/50 to-[var(--accent-gold)]/5">
                     <div className="flex items-center gap-3 mb-2">
-                        <div className="p-2 bg-[var(--accent-blue)]/20 rounded-lg text-[var(--accent-blue)]"><DollarSign className="w-5 h-5" /></div>
+                        <div className="p-2 bg-[var(--accent-gold)]/20 rounded-lg text-[var(--accent-gold)]"><DollarSign className="w-5 h-5" /></div>
                         <h3 className="text-white/40 uppercase tracking-widest text-xs">Facturado Mes</h3>
                     </div>
-                    <p className="text-4xl font-light text-[var(--accent-blue)] mt-2">${monthBilled.toLocaleString('en-US')}</p>
+                    <p className="text-4xl font-light text-[var(--accent-gold)] mt-2">${monthBilled.toLocaleString('en-US')}</p>
                 </GlassCard>
 
                 <GlassCard className="p-6 border-white/5 bg-gradient-to-br from-black/50 to-green-500/5">
@@ -79,8 +79,8 @@ export default async function AdminDashboard() {
                 <Link href="/admin/consultations">
                     <GlassCard className="p-6 border-white/5 hover:bg-white/5 transition-colors cursor-pointer group">
                         <div className="flex items-center gap-3 mb-2">
-                            <Calendar className="w-5 h-5 text-[var(--accent-blue)]" />
-                            <h3 className="text-white font-medium group-hover:text-[var(--accent-blue)] transition-colors">Consultas y Visitas</h3>
+                            <Calendar className="w-5 h-5 text-[var(--accent-gold)]" />
+                            <h3 className="text-white font-medium group-hover:text-[var(--accent-gold)] transition-colors">Consultas y Visitas</h3>
                         </div>
                         <p className="text-white/40 text-sm">Gestionar agenda de mediciones y visitas técnicas.</p>
                     </GlassCard>
@@ -89,8 +89,8 @@ export default async function AdminDashboard() {
                 <Link href="/admin/clients">
                     <GlassCard className="p-6 border-white/5 hover:bg-white/5 transition-colors cursor-pointer group">
                         <div className="flex items-center gap-3 mb-2">
-                            <Users className="w-5 h-5 text-[var(--accent-blue)]" />
-                            <h3 className="text-white font-medium group-hover:text-[var(--accent-blue)] transition-colors">Directorio de Clientes</h3>
+                            <Users className="w-5 h-5 text-[var(--accent-gold)]" />
+                            <h3 className="text-white font-medium group-hover:text-[var(--accent-gold)] transition-colors">Directorio de Clientes</h3>
                         </div>
                         <p className="text-white/40 text-sm">Ver y gestionar la base de clientes.</p>
                     </GlassCard>
@@ -99,8 +99,8 @@ export default async function AdminDashboard() {
                 <Link href="/admin/invoices">
                     <GlassCard className="p-6 border-white/5 hover:bg-white/5 transition-colors cursor-pointer group">
                         <div className="flex items-center gap-3 mb-2">
-                            <FileText className="w-5 h-5 text-[var(--accent-blue)]" />
-                            <h3 className="text-white font-medium group-hover:text-[var(--accent-blue)] transition-colors">Finanzas</h3>
+                            <FileText className="w-5 h-5 text-[var(--accent-gold)]" />
+                            <h3 className="text-white font-medium group-hover:text-[var(--accent-gold)] transition-colors">Finanzas</h3>
                         </div>
                         <p className="text-white/40 text-sm">Cotizaciones, facturas y resumen financiero.</p>
                     </GlassCard>

@@ -27,7 +27,7 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
         return (
             <div className="p-8 text-center">
                 <h2 className="text-2xl font-display text-white">Cliente no encontrado</h2>
-                <Link href="/admin/clients" className="text-[var(--accent-blue)] mt-4 inline-block hover:underline">
+                <Link href="/admin/clients" className="text-[var(--accent-gold)] mt-4 inline-block hover:underline">
                     Volver al directorio
                 </Link>
             </div>
@@ -60,7 +60,7 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
             {/* HEADER PERFIL */}
             <div className="flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
                 <div className="flex items-center gap-5">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[var(--accent-blue)] to-yellow-700 flex items-center justify-center text-black font-display text-3xl shadow-lg shadow-black/20">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[var(--accent-gold)] to-yellow-700 flex items-center justify-center text-black font-display text-3xl shadow-lg shadow-black/20">
                         {client.full_name?.charAt(0).toUpperCase()}
                     </div>
                     <div>
@@ -75,7 +75,7 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
                     <Link href={`/admin/clients/${client.id}/edit`} className="flex-1 md:flex-none justify-center flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 text-white transition-all text-sm font-medium">
                         Editar Cliente
                     </Link>
-                    <Link href={`/admin/invoices/new?client_id=${client.id}&client_name=${encodeURIComponent(client.full_name)}`} className="flex-1 md:flex-none justify-center flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--accent-blue)] text-black font-semibold hover:bg-[var(--accent-blue)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] text-sm">
+                    <Link href={`/admin/invoices/new?client_id=${client.id}&client_name=${encodeURIComponent(client.full_name)}`} className="flex-1 md:flex-none justify-center flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--accent-gold)] text-black font-semibold hover:bg-[var(--accent-gold)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] text-sm">
                         <Plus className="w-4 h-4" /> Nueva Cotización
                     </Link>
                 </div>
@@ -88,21 +88,21 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
                         <h3 className="text-lg font-display text-white mb-4">Datos de Contacto</h3>
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
-                                <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><Mail className="w-4 h-4" /></div>
+                                <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><Mail className="w-4 h-4" /></div>
                                 <div>
                                     <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Email</p>
                                     <p className="text-sm text-white">{client.email || 'No registrado'}</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-3">
-                                <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><Phone className="w-4 h-4" /></div>
+                                <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><Phone className="w-4 h-4" /></div>
                                 <div>
                                     <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Teléfono</p>
                                     <p className="text-sm text-white">{client.phone || 'No registrado'}</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-3">
-                                <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-blue)] mt-0.5"><MapPin className="w-4 h-4" /></div>
+                                <div className="p-2 bg-white/5 rounded-lg text-[var(--accent-gold)] mt-0.5"><MapPin className="w-4 h-4" /></div>
                                 <div>
                                     <p className="text-xs text-white/40 uppercase tracking-wider mb-1">Dirección Registrada</p>
                                     <p className="text-sm text-white leading-relaxed">{client.address || 'No registrada'}</p>
@@ -112,7 +112,7 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
                     </GlassCard>
 
                     {/* METRICAS RAPIDAS */}
-                    <GlassCard className="p-6 border-white/5 bg-gradient-to-br from-black/60 to-[var(--accent-blue)]/5">
+                    <GlassCard className="p-6 border-white/5 bg-gradient-to-br from-black/60 to-[var(--accent-gold)]/5">
                         <h3 className="text-lg font-display text-white mb-4 flex items-center gap-2">
                             Resumen Financiero
                         </h3>
@@ -126,8 +126,8 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
                                 <span className="text-white font-medium">{invoices?.length || 0}</span>
                             </div>
                             <div className="flex justify-between items-center pt-2">
-                                <span className="text-[var(--accent-blue)] font-medium text-sm">Volumen de Negocio (LTV)</span>
-                                <span className="text-[var(--accent-blue)] font-display text-xl">
+                                <span className="text-[var(--accent-gold)] font-medium text-sm">Volumen de Negocio (LTV)</span>
+                                <span className="text-[var(--accent-gold)] font-display text-xl">
                                     ${invoices?.filter(i => i.status === 'paid').reduce((acc, curr) => acc + Number(curr.total_amount), 0).toLocaleString('en-US') || '0'}
                                 </span>
                             </div>
@@ -141,7 +141,7 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
                     <GlassCard className="p-6 border-white/5">
                         <div className="flex justify-between items-center mb-6">
                             <h3 className="text-lg font-display text-white flex items-center gap-2">
-                                <Briefcase className="w-5 h-5 text-[var(--accent-blue)]" /> Proyectos Activos & Historial
+                                <Briefcase className="w-5 h-5 text-[var(--accent-gold)]" /> Proyectos Activos & Historial
                             </h3>
                         </div>
                         {projects && projects.length > 0 ? (
@@ -163,7 +163,7 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
                                                 <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> Inicio: {new Date(project.start_date || project.created_at).toLocaleDateString()}</span>
                                             </p>
                                         </div>
-                                        <Link href={`/admin/projects/${project.id}`} className="text-sm text-[var(--accent-blue)] hover:underline opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <Link href={`/admin/projects/${project.id}`} className="text-sm text-[var(--accent-gold)] hover:underline opacity-0 group-hover:opacity-100 transition-opacity">
                                             Ver Detalles &rarr;
                                         </Link>
                                     </div>
@@ -180,7 +180,7 @@ export default async function ClientProfilePage({ params }: { params: { id: stri
                     {/* INVOICES PANEL */}
                     <GlassCard className="p-6 border-white/5">
                         <h3 className="text-lg font-display text-white mb-6 flex items-center gap-2">
-                            <FileText className="w-5 h-5 text-[var(--accent-blue)]" /> Cotizaciones y Facturas
+                            <FileText className="w-5 h-5 text-[var(--accent-gold)]" /> Cotizaciones y Facturas
                         </h3>
                         {invoices && invoices.length > 0 ? (
                             <div className="overflow-x-auto">

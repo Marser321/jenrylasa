@@ -25,7 +25,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                 <div className="p-6 border-b border-white/5">
                     <h2 className="text-xl font-display tracking-widest uppercase">
                         <span className="text-white">LASA</span>{' '}
-                        <span className="text-[var(--accent-blue)] text-sm">ADMIN</span>
+                        <span className="text-[var(--accent-gold)] text-sm">ADMIN</span>
                     </h2>
                     <p className="text-xs text-white/40 mt-1">Carpintería Premium</p>
                 </div>
@@ -45,6 +45,9 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                     <Link href="/admin/invoices" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-white/5 text-white/70 hover:text-white transition-colors">
                         <FileText className="w-5 h-5" /> Finanzas
                     </Link>
+                    <Link href="/admin/projects" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-white/5 text-white/70 hover:text-white transition-colors">
+                        <Hammer className="w-5 h-5" /> Proyectos
+                    </Link>
                     <div className="pt-4 mt-4 border-t border-white/5">
                         <Link href="/admin/settings" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-white/5 text-white/70 hover:text-white transition-colors">
                             <Settings className="w-5 h-5" /> Configuración
@@ -61,19 +64,19 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
             {/* Mobile Bottom Navigation Bar */}
             <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-black/90 backdrop-blur-xl border-t border-white/10 flex justify-around items-center p-3 z-50 safe-area-pb">
-                <Link href="/admin" className="flex flex-col items-center gap-1 text-white/60 hover:text-[var(--accent-blue)] transition-colors">
+                <Link href="/admin" className="flex flex-col items-center gap-1 text-white/60 hover:text-[var(--accent-gold)] transition-colors">
                     <LayoutDashboard className="w-5 h-5" />
                     <span className="text-[10px] uppercase font-medium">Inicio</span>
                 </Link>
-                <Link href="/admin/consultations" className="flex flex-col items-center gap-1 text-white/60 hover:text-[var(--accent-blue)] transition-colors">
+                <Link href="/admin/consultations" className="flex flex-col items-center gap-1 text-white/60 hover:text-[var(--accent-gold)] transition-colors">
                     <Calendar className="w-5 h-5" />
                     <span className="text-[10px] uppercase font-medium">Visitas</span>
                 </Link>
-                <Link href="/admin/clients" className="flex flex-col items-center gap-1 text-white/60 hover:text-[var(--accent-blue)] transition-colors">
+                <Link href="/admin/clients" className="flex flex-col items-center gap-1 text-white/60 hover:text-[var(--accent-gold)] transition-colors">
                     <Users className="w-5 h-5" />
                     <span className="text-[10px] uppercase font-medium">Clientes</span>
                 </Link>
-                <Link href="/admin/staff" className="flex flex-col items-center gap-1 text-white/60 hover:text-[var(--accent-blue)] transition-colors">
+                <Link href="/admin/staff" className="flex flex-col items-center gap-1 text-white/60 hover:text-[var(--accent-gold)] transition-colors">
                     <HardHat className="w-5 h-5" />
                     <span className="text-[10px] uppercase font-medium">Equipo</span>
                 </Link>

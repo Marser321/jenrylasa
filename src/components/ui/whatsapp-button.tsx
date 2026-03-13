@@ -39,7 +39,7 @@ export function WhatsAppButton({
         >
             {/* Liquid Effect Background */}
             <motion.div
-                className="absolute inset-0 bg-gradient-to-br from-[var(--accent-blue)]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                className="absolute inset-0 bg-gradient-to-br from-[var(--accent-gold)]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 animate={{
                     scale: [1, 1.2, 1],
                     rotate: [0, 90, 0],
@@ -51,7 +51,7 @@ export function WhatsAppButton({
                 }}
             />
 
-            <MessageCircle className="w-6 h-6 text-white group-hover:text-[var(--accent-blue)] transition-colors duration-300 relative z-10" />
+            <MessageCircle className="w-6 h-6 text-white group-hover:text-[var(--accent-gold)] transition-colors duration-300 relative z-10" />
 
             {/* Tooltip */}
             <span className="absolute right-full mr-4 px-4 py-2 rounded-lg bg-black/80 backdrop-blur-md border border-white/10 text-white text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">

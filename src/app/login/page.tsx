@@ -54,9 +54,9 @@ export default function LoginPage() {
                     <p className="text-white/40 text-sm text-center mb-6">Ingresá tus credenciales para administrar cotizaciones y proyectos.</p>
 
                     {/* Cartelito temporal para credenciales de prueba */}
-                    <div className="bg-[var(--accent-blue)]/10 border border-[var(--accent-blue)]/20 rounded-md p-3 mb-6 text-center">
+                    <div className="bg-[var(--accent-gold)]/10 border border-[var(--accent-gold)]/20 rounded-md p-3 mb-6 text-center">
                         <p className="text-xs text-white/50 mb-1">Credenciales de prueba:</p>
-                        <p className="text-sm text-[var(--accent-blue)] font-mono">admin@lasa.com / admin123</p>
+                        <p className="text-sm text-[var(--accent-gold)] font-mono">admin@lasa.com / admin123</p>
                     </div>
 
                     <form action={handleSubmit} className="space-y-4">

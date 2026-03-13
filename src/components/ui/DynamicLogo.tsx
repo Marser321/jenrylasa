@@ -1,0 +1,62 @@
+"use client";
+
+import React from "react";
+import { cn } from "@/lib/utils";
+
+interface DynamicLogoProps {
+    className?: string;
+    goldColor?: string;
+    navyColor?: string;
+    lasaTextColor?: string;
+    subtextColor?: string;
+    fontFamily?: string;
+}
+
+export const DynamicLogo = ({
+    className,
+    goldColor = "#C9A227",
+    navyColor = "#4A3728",
+    lasaTextColor = "#4A3728",
+    subtextColor = "#ffffff",
+    fontFamily = "'Cinzel', serif",
+}: DynamicLogoProps) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 375 375"
+            className={cn("w-full h-auto", className)}
+        >
+            <defs>
+                <style>
+                    {`
+                        .dyn-gold { fill: ${goldColor}; stroke: ${goldColor}; }
+                        .dyn-navy { fill: ${navyColor}; stroke: ${navyColor}; }
+                        .dyn-text-large { font-family: ${fontFamily}; font-size: 89.19px; font-weight: 700; fill: ${lasaTextColor}; }
+                        .dyn-text-small { font-family: 'Inter', sans-serif; font-size: 16.99px; font-weight: 700; fill: ${subtextColor}; letter-spacing: 0.25em; text-transform: uppercase; }
+                    `}
+                </style>
+            </defs>
+            {/* Background Rect */}
+            <rect x="20" y="313.12" width="335" height="26.3" fill={goldColor} />
+            {/* Subtext */}
+            <text x="187.5" y="331.87" className="dyn-text-small" textAnchor="middle">KITCHEN AND CLOSET</text>
+            
+            {/* Center Logo Mark */}
+            <polyline className="dyn-navy" strokeWidth="1" points="187.55 212.51 187.55 190.57 187.41 190.57 165.61 212.51 187.55 212.51" />
+            <polygon className="dyn-gold" strokeWidth="1" points="165.61 212.51 187.41 190.57 165.61 190.57 165.61 212.51" />
+            <polyline className="dyn-gold" strokeWidth="1" points="187.55 161.43 165.61 161.43 165.61 183.37 187.55 183.37 187.55 161.43" />
+            <polyline className="dyn-navy" strokeWidth="1" points="194.4 212.51 216.35 212.51 216.35 190.57 194.4 190.57 194.4 212.51" />
+            <polygon className="dyn-navy" strokeWidth="1" points="194.55 183.37 216.35 183.37 216.35 161.43 194.55 183.37" />
+            <polyline className="dyn-gold" strokeWidth="1" points="194.4 161.43 194.4 183.37 194.55 183.37 216.35 161.43 194.4 161.43" />
+            
+            {/* Roof Parts */}
+            <polyline className="dyn-gold" strokeWidth="2" points="272.69 36.42 272.69 98.86 190.98 25.6 190.98 63.8 303.18 164.39 303.18 36.42 272.69 36.42" />
+            <polyline className="dyn-navy" strokeWidth="2" points="303.18 182.44 190.98 80.32 190.98 118.52 303.18 220.64 303.18 182.44" />
+            <polyline className="dyn-gold" strokeWidth="2" points="109.26 36.42 109.26 153.58 190.98 80.32 190.98 118.52 78.77 219.12 78.77 36.42 109.26 36.42" />
+            <polyline className="dyn-navy" strokeWidth="2" points="120.42 88.86 120.42 127.06 190.98 63.8 190.98 25.6 120.42 88.86" />
+            
+            {/* Main Text: LASA */}
+            <text x="187.5" y="288.8" className="dyn-text-large" textAnchor="middle">LASA</text>
+        </svg>
+    );
+};

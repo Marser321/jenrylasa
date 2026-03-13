@@ -92,13 +92,13 @@
   --muted: oklch(0.2 0 0);
   --muted-foreground: oklch(0.65 0 0);
 
-  /* Accent — Lasa Blue para lujo y marca */
-  --accent-blue: #1b75bc;
-  --accent-blue-soft: color-mix(in srgb, var(--accent-blue) 15%, transparent);
-  --accent-navy: #1f2a5c;
+  /* Accent — Lasa Wood and Gold for luxury branding */
+  --accent-gold: #C9A227;
+  --accent-wood-dark: #4A3728;
+  --accent-wood-light: #6B4F3B;
   --accent-warm: oklch(0.70 0.08 50);
   --accent-ice: oklch(0.85 0.03 230);
-  --accent: var(--accent-navy);
+  --accent: var(--accent-gold);
   --accent-foreground: oklch(0.97 0 0);
 
   /* Destructive */
@@ -107,7 +107,7 @@
   /* Borders & Inputs */
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 12%);
-  --ring: var(--accent-blue);
+  --ring: var(--accent-gold);
 
   /* Glass system */
   --glass-background: oklch(0.12 0 0 / 25%);
@@ -116,8 +116,8 @@
   --glass-blur: 16px;
 
   /* Charts */
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-1: var(--accent-gold);
+  --chart-2: var(--accent-wood-light);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
@@ -125,12 +125,12 @@
   /* Sidebar */
   --sidebar: var(--bg-surface);
   --sidebar-foreground: oklch(0.97 0 0);
-  --sidebar-primary: var(--accent-blue);
+  --sidebar-primary: var(--accent-gold);
   --sidebar-primary-foreground: oklch(0.97 0 0);
   --sidebar-accent: oklch(0.2 0 0);
   --sidebar-accent-foreground: oklch(0.97 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: var(--accent-blue);
+  --sidebar-ring: var(--accent-gold);
 
   /* ─── Animaciones: Curvas Bézier de Lujo ─────────────── */
   --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
@@ -147,7 +147,7 @@
   /* ─── Sombras ────────────────────────────────────────── */
   --shadow-glass: 0 8px 32px oklch(0 0 0 / 40%);
   --shadow-glow: 0 0 60px oklch(1 0 0 / 5%);
-  --shadow-blue: 0 0 40px color-mix(in srgb, var(--accent-blue) 15%, transparent);
+  --shadow-gold: 0 0 40px color-mix(in srgb, var(--accent-gold) 15%, transparent);
 
   /* ─── Espaciado Lujo ─────────────────────────────────── */
   --space-xs: 0.5rem;

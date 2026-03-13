@@ -136,14 +136,14 @@ export default function ConsultationsPage() {
                 <div className="flex w-full sm:w-auto gap-3">
                     <button
                         onClick={() => setShowFilters(!showFilters)}
-                        className={`flex items-center justify-center p-3 text-white/60 hover:text-white bg-white/5 hover:bg-white/10 rounded-lg transition-colors border ${showFilters ? 'border-[var(--accent-blue)]/50 text-[var(--accent-blue)]' : 'border-white/10'}`}
+                        className={`flex items-center justify-center p-3 text-white/60 hover:text-white bg-white/5 hover:bg-white/10 rounded-lg transition-colors border ${showFilters ? 'border-[var(--accent-gold)]/50 text-[var(--accent-gold)]' : 'border-white/10'}`}
                         title="Filtrar por estado"
                     >
                         <Filter className="w-5 h-5" />
                     </button>
                     <button
                         onClick={handleNewVisit}
-                        className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-blue)] text-black rounded-lg hover:bg-[var(--accent-blue)]/90 transition-colors font-semibold shadow-[0_0_15px_rgba(209,164,88,0.2)]"
+                        className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-gold)] text-black rounded-lg hover:bg-[var(--accent-gold)]/90 transition-colors font-semibold shadow-[0_0_15px_rgba(209,164,88,0.2)]"
                     >
                         <Plus className="w-5 h-5" /> Nueva Visita
                     </button>
@@ -158,7 +158,7 @@ export default function ConsultationsPage() {
                             key={filter}
                             onClick={() => setStatusFilter(filter)}
                             className={`px-4 py-2 text-sm rounded-lg transition-colors border ${statusFilter === filter
-                                    ? 'bg-[var(--accent-blue)]/20 text-[var(--accent-blue)] border-[var(--accent-blue)]/30'
+                                    ? 'bg-[var(--accent-gold)]/20 text-[var(--accent-gold)] border-[var(--accent-gold)]/30'
                                     : 'bg-white/5 text-white/60 border-white/10 hover:bg-white/10 hover:text-white'
                                 }`}
                         >
@@ -193,7 +193,7 @@ export default function ConsultationsPage() {
                         {!isToday && (
                             <button
                                 onClick={goToToday}
-                                className="text-xs text-[var(--accent-blue)] hover:underline ml-2"
+                                className="text-xs text-[var(--accent-gold)] hover:underline ml-2"
                             >
                                 Ir a Hoy
                             </button>
@@ -201,13 +201,13 @@ export default function ConsultationsPage() {
                     </div>
 
                     <div className="flex items-center gap-3">
-                        <div className="flex items-center gap-2 text-sm text-[var(--accent-blue)] font-medium">
+                        <div className="flex items-center gap-2 text-sm text-[var(--accent-gold)] font-medium">
                             <CalendarIcon className="w-4 h-4" />
                             <input
                                 type="date"
                                 value={selectedDate}
                                 onChange={(e) => setSelectedDate(e.target.value)}
-                                className="bg-transparent border-none text-[var(--accent-blue)] focus:outline-none cursor-pointer"
+                                className="bg-transparent border-none text-[var(--accent-gold)] focus:outline-none cursor-pointer"
                             />
                         </div>
                     </div>
@@ -217,7 +217,7 @@ export default function ConsultationsPage() {
                 <div className="divide-y divide-white/5">
                     {loading ? (
                         <div className="py-20 flex flex-col items-center justify-center gap-3 text-white/40">
-                            <Loader2 className="w-8 h-8 animate-spin text-[var(--accent-blue)]" />
+                            <Loader2 className="w-8 h-8 animate-spin text-[var(--accent-gold)]" />
                             <p>Cargando agenda...</p>
                         </div>
                     ) : filteredConsultations.length > 0 ? (
@@ -230,7 +230,7 @@ export default function ConsultationsPage() {
                                     <div className="flex items-start md:items-center gap-4">
                                         <div className="w-16 text-center shrink-0">
                                             <p className="text-lg font-display text-white">{time}</p>
-                                            <p className="text-xs text-[var(--accent-blue)] font-medium">{period}</p>
+                                            <p className="text-xs text-[var(--accent-gold)] font-medium">{period}</p>
                                         </div>
                                         <div className="w-px h-12 bg-white/10 hidden md:block"></div>
                                         <div className="pl-0 md:pl-2">
@@ -242,7 +242,7 @@ export default function ConsultationsPage() {
                                             </div>
                                             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/60">
                                                 <span className="flex items-center gap-1.5">
-                                                    <Hammer className="w-4 h-4 text-[var(--accent-blue)]" /> {apt.project_description}
+                                                    <Hammer className="w-4 h-4 text-[var(--accent-gold)]" /> {apt.project_description}
                                                 </span>
                                                 <span className="flex items-center gap-1.5">
                                                     <User className="w-4 h-4" /> Experto: {apt.expert}
@@ -276,7 +276,7 @@ export default function ConsultationsPage() {
                             </p>
                             <button
                                 onClick={handleNewVisit}
-                                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[var(--accent-blue)] text-black rounded-lg hover:bg-[var(--accent-blue)]/90 transition-colors font-semibold text-sm"
+                                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[var(--accent-gold)] text-black rounded-lg hover:bg-[var(--accent-gold)]/90 transition-colors font-semibold text-sm"
                             >
                                 <Plus className="w-4 h-4" /> Agendar Nueva Visita
                             </button>

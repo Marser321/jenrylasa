@@ -168,7 +168,7 @@ export default function NewInvoicePage() {
                     <button onClick={() => window.print()} className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all text-sm">
                         <Download className="w-4 h-4" /> Exportar PDF
                     </button>
-                    <button onClick={handleSave} disabled={isSaving} className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--accent-blue)] text-black font-semibold hover:bg-[var(--accent-blue)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] text-sm disabled:opacity-50">
+                    <button onClick={handleSave} disabled={isSaving} className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--accent-gold)] text-black font-semibold hover:bg-[var(--accent-gold)]/90 transition-all shadow-[0_0_15px_rgba(201,162,39,0.2)] text-sm disabled:opacity-50">
                         {isSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
                         {isSaving ? "Guardando..." : "Guardar en BD"}
                     </button>
@@ -180,7 +180,7 @@ export default function NewInvoicePage() {
                 <div className="lg:col-span-2 space-y-6">
                     <GlassCard className="p-6 border-white/5 space-y-6">
                         <h2 className="text-lg font-display flex items-center gap-2 text-white">
-                            <FolderKanban className="w-5 h-5 text-[var(--accent-blue)]" /> Datos del Proyecto
+                            <FolderKanban className="w-5 h-5 text-[var(--accent-gold)]" /> Datos del Proyecto
                         </h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -192,7 +192,7 @@ export default function NewInvoicePage() {
                                         value={clientName}
                                         onChange={(e) => setClientName(e.target.value)}
                                         placeholder="Buscar o crear cliente..."
-                                        className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-[var(--accent-blue)] focus:bg-white/10 transition-all outline-none text-sm text-white"
+                                        className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-[var(--accent-gold)] focus:bg-white/10 transition-all outline-none text-sm text-white"
                                     />
                                 </div>
                             </div>
@@ -204,7 +204,7 @@ export default function NewInvoicePage() {
                                         value={projectTitle}
                                         onChange={(e) => setProjectTitle(e.target.value)}
                                         placeholder="Ej: Cocina Wynwood"
-                                        className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-[var(--accent-blue)] focus:bg-white/10 transition-all outline-none text-sm text-white"
+                                        className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-[var(--accent-gold)] focus:bg-white/10 transition-all outline-none text-sm text-white"
                                     />
                                 </div>
                             </div>
@@ -216,7 +216,7 @@ export default function NewInvoicePage() {
                                         type="date"
                                         value={date}
                                         onChange={(e) => setDate(e.target.value)}
-                                        className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-[var(--accent-blue)] focus:bg-white/10 transition-all outline-none text-sm text-white [color-scheme:dark]"
+                                        className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-[var(--accent-gold)] focus:bg-white/10 transition-all outline-none text-sm text-white [color-scheme:dark]"
                                     />
                                 </div>
                             </div>
@@ -228,7 +228,7 @@ export default function NewInvoicePage() {
                                         type="date"
                                         value={dueDate}
                                         onChange={(e) => setDueDate(e.target.value)}
-                                        className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-[var(--accent-blue)] focus:bg-white/10 transition-all outline-none text-sm text-white [color-scheme:dark]"
+                                        className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-[var(--accent-gold)] focus:bg-white/10 transition-all outline-none text-sm text-white [color-scheme:dark]"
                                     />
                                 </div>
                             </div>
@@ -238,7 +238,7 @@ export default function NewInvoicePage() {
                     <GlassCard className="p-6 border-white/5 space-y-6">
                         <div className="flex justify-between items-center border-b border-white/5 pb-4">
                             <h2 className="text-lg font-display flex items-center gap-2 text-white">
-                                <FileText className="w-5 h-5 text-[var(--accent-blue)]" /> Desglose de Costos
+                                <FileText className="w-5 h-5 text-[var(--accent-gold)]" /> Desglose de Costos
                             </h2>
                             <div className="flex gap-2">
                                 <button onClick={() => addItem('wood_material')} className="px-3 py-1.5 text-xs bg-white/5 hover:bg-white/10 rounded-md border border-white/10 flex items-center gap-1 transition-colors" title="Agregar material o madera">
@@ -281,7 +281,7 @@ export default function NewInvoicePage() {
                                                 value={item.description}
                                                 onChange={(e) => updateItem(item.id, "description", e.target.value)}
                                                 placeholder="Descripción del ítem..."
-                                                className="w-full p-2 bg-transparent border-b border-white/10 focus:border-[var(--accent-blue)] outline-none text-white text-sm"
+                                                className="w-full p-2 bg-transparent border-b border-white/10 focus:border-[var(--accent-gold)] outline-none text-white text-sm"
                                             />
                                         </div>
 
@@ -292,7 +292,7 @@ export default function NewInvoicePage() {
                                                     value={item.quantity || ""}
                                                     onChange={(e) => updateItem(item.id, "quantity", parseFloat(e.target.value))}
                                                     placeholder="Cant."
-                                                    className="w-full p-2 bg-white/5 rounded-md border border-white/10 focus:border-[var(--accent-blue)] outline-none text-white text-sm text-center"
+                                                    className="w-full p-2 bg-white/5 rounded-md border border-white/10 focus:border-[var(--accent-gold)] outline-none text-white text-sm text-center"
                                                 />
                                             </div>
                                             <div className="w-20">
@@ -300,16 +300,16 @@ export default function NewInvoicePage() {
                                                     value={item.unit_measure}
                                                     onChange={(e) => updateItem(item.id, "unit_measure", e.target.value)}
                                                     placeholder="Unidad (m2, hr)"
-                                                    className="w-full p-2 bg-white/5 rounded-md border border-white/10 focus:border-[var(--accent-blue)] outline-none text-white text-sm text-center text-white/50"
+                                                    className="w-full p-2 bg-white/5 rounded-md border border-white/10 focus:border-[var(--accent-gold)] outline-none text-white text-sm text-center text-white/50"
                                                 />
                                             </div>
                                             <div className="relative w-28">
-                                                <DollarSign className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 text-[var(--accent-blue)]" />
+                                                <DollarSign className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 text-[var(--accent-gold)]" />
                                                 <input
                                                     type="number"
                                                     value={item.unit_price || ""}
                                                     onChange={(e) => updateItem(item.id, "unit_price", parseFloat(e.target.value))}
-                                                    className="w-full pl-6 pr-2 py-2 rounded-md bg-white/5 border border-white/10 focus:border-[var(--accent-blue)] outline-none text-white text-sm"
+                                                    className="w-full pl-6 pr-2 py-2 rounded-md bg-white/5 border border-white/10 focus:border-[var(--accent-gold)] outline-none text-white text-sm"
                                                 />
                                             </div>
                                         </div>
@@ -332,7 +332,7 @@ export default function NewInvoicePage() {
 
                     <GlassCard className="p-6 border-white/5 space-y-4">
                         <h2 className="text-lg font-display flex items-center gap-2 text-white">
-                            <Upload className="w-5 h-5 text-[var(--accent-blue)]" /> Archivos Adjuntos (Planos / Entregables)
+                            <Upload className="w-5 h-5 text-[var(--accent-gold)]" /> Archivos Adjuntos (Planos / Entregables)
                         </h2>
 
                         <label className="block border border-dashed border-white/20 rounded-xl p-8 text-center hover:bg-white/5 transition-colors cursor-pointer group">
@@ -347,7 +347,7 @@ export default function NewInvoicePage() {
                                     }
                                 }}
                             />
-                            <Upload className="w-8 h-8 text-white/20 group-hover:text-[var(--accent-blue)] mx-auto mb-3 transition-colors" />
+                            <Upload className="w-8 h-8 text-white/20 group-hover:text-[var(--accent-gold)] mx-auto mb-3 transition-colors" />
                             <p className="text-sm text-white/60">Clic o arrastra fotos de la cocina terminada o los planos PDF aquí.</p>
                             <p className="text-xs text-white/30 mt-1">Soporta JPG, PNG, PDF (Max 10MB)</p>
                         </label>
@@ -375,7 +375,7 @@ export default function NewInvoicePage() {
 
                 {/* Summary Side - Sticky */}
                 <div className="space-y-6 relative">
-                    <GlassCard className="border-[var(--accent-blue)]/30 sticky top-6 p-6">
+                    <GlassCard className="border-[var(--accent-gold)]/30 sticky top-6 p-6">
                         <h3 className="text-xl font-display mb-6 border-b border-white/10 pb-4">Resumen de Cotización</h3>
                         <div className="space-y-4 text-sm font-light">
                             <div className="flex justify-between text-white/60">
@@ -389,7 +389,7 @@ export default function NewInvoicePage() {
                                     type="number"
                                     value={taxRate}
                                     onChange={(e) => setTaxRate(parseFloat(e.target.value) || 0)}
-                                    className="w-16 p-1 bg-white/5 border border-white/10 rounded text-right outline-none focus:border-[var(--accent-blue)] text-white"
+                                    className="w-16 p-1 bg-white/5 border border-white/10 rounded text-right outline-none focus:border-[var(--accent-gold)] text-white"
                                 />
                             </div>
 
@@ -400,11 +400,11 @@ export default function NewInvoicePage() {
                                 </div>
                             )}
 
-                            <div className="h-px bg-[var(--accent-blue)]/20 my-4" />
+                            <div className="h-px bg-[var(--accent-gold)]/20 my-4" />
 
                             <div className="flex justify-between items-baseline">
                                 <span className="text-white/80 font-medium">TOTAL</span>
-                                <span className="text-3xl font-bold text-[var(--accent-blue)] tracking-tight">
+                                <span className="text-3xl font-bold text-[var(--accent-gold)] tracking-tight">
                                     ${total.toFixed(2)}
                                 </span>
                             </div>

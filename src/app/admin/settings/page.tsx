@@ -87,7 +87,7 @@ export default function SettingsPage() {
                 <button
                     onClick={handleSave}
                     disabled={saving}
-                    className="flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-blue)] text-black rounded-lg hover:bg-[var(--accent-blue)]/90 transition-colors font-semibold shadow-[0_0_15px_rgba(209,164,88,0.2)] w-full sm:w-auto disabled:opacity-50"
+                    className="flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-gold)] text-black rounded-lg hover:bg-[var(--accent-gold)]/90 transition-colors font-semibold shadow-[0_0_15px_rgba(209,164,88,0.2)] w-full sm:w-auto disabled:opacity-50"
                 >
                     {saving ? (
                         <><Loader2 className="w-5 h-5 animate-spin" /> Guardando...</>
@@ -109,7 +109,7 @@ export default function SettingsPage() {
                 <div className="lg:col-span-2 space-y-6">
                     <GlassCard className="p-6">
                         <h2 className="text-xl font-medium text-white mb-6 flex items-center gap-2">
-                            <Store className="w-5 h-5 text-[var(--accent-blue)]" /> Información del Negocio
+                            <Store className="w-5 h-5 text-[var(--accent-gold)]" /> Información del Negocio
                         </h2>
                         <div className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -119,7 +119,7 @@ export default function SettingsPage() {
                                         type="text"
                                         value={settings.businessName}
                                         onChange={(e) => updateField('businessName', e.target.value)}
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:border-[var(--accent-blue)] focus:outline-none"
+                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:border-[var(--accent-gold)] focus:outline-none"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -128,7 +128,7 @@ export default function SettingsPage() {
                                         type="text"
                                         value={settings.rut}
                                         onChange={(e) => updateField('rut', e.target.value)}
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:border-[var(--accent-blue)] focus:outline-none"
+                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:border-[var(--accent-gold)] focus:outline-none"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -139,7 +139,7 @@ export default function SettingsPage() {
                                             type="tel"
                                             value={settings.phone}
                                             onChange={(e) => updateField('phone', e.target.value)}
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white focus:border-[var(--accent-blue)] focus:outline-none"
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white focus:border-[var(--accent-gold)] focus:outline-none"
                                         />
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@ export default function SettingsPage() {
                                             type="email"
                                             value={settings.email}
                                             onChange={(e) => updateField('email', e.target.value)}
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white focus:border-[var(--accent-blue)] focus:outline-none"
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white focus:border-[var(--accent-gold)] focus:outline-none"
                                         />
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@ export default function SettingsPage() {
                                             type="text"
                                             value={settings.address}
                                             onChange={(e) => updateField('address', e.target.value)}
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white focus:border-[var(--accent-blue)] focus:outline-none"
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white focus:border-[var(--accent-gold)] focus:outline-none"
                                         />
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@ export default function SettingsPage() {
                                             type="url"
                                             value={settings.website}
                                             onChange={(e) => updateField('website', e.target.value)}
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white focus:border-[var(--accent-blue)] focus:outline-none"
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white focus:border-[var(--accent-gold)] focus:outline-none"
                                         />
                                     </div>
                                 </div>
@@ -187,7 +187,7 @@ export default function SettingsPage() {
                 <div className="space-y-6">
                     <GlassCard className="p-6">
                         <h2 className="text-xl font-medium text-white mb-6 flex items-center gap-2">
-                            <Clock className="w-5 h-5 text-[var(--accent-blue)]" /> Horarios
+                            <Clock className="w-5 h-5 text-[var(--accent-gold)]" /> Horarios
                         </h2>
                         <div className="space-y-4">
                             {Object.entries(settings.schedule).map(([day, hours]) => (
@@ -198,14 +198,14 @@ export default function SettingsPage() {
                                             type="time"
                                             value={hours.open}
                                             onChange={(e) => updateSchedule(day, 'open', e.target.value)}
-                                            className="bg-white/5 border border-white/10 rounded px-2 py-1 text-white/60 focus:border-[var(--accent-blue)] focus:outline-none"
+                                            className="bg-white/5 border border-white/10 rounded px-2 py-1 text-white/60 focus:border-[var(--accent-gold)] focus:outline-none"
                                         />
                                         <span className="text-white/40">-</span>
                                         <input
                                             type="time"
                                             value={hours.close}
                                             onChange={(e) => updateSchedule(day, 'close', e.target.value)}
-                                            className="bg-white/5 border border-white/10 rounded px-2 py-1 text-white/60 focus:border-[var(--accent-blue)] focus:outline-none"
+                                            className="bg-white/5 border border-white/10 rounded px-2 py-1 text-white/60 focus:border-[var(--accent-gold)] focus:outline-none"
                                         />
                                     </div>
                                 </div>

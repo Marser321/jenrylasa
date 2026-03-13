@@ -63,7 +63,7 @@ export default function NewClientPage() {
 
             <form onSubmit={handleSave}>
                 <GlassCard className="p-8 space-y-6 border-white/5 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--accent-blue)]/5 rounded-full blur-[80px] -z-10 pointer-events-none" />
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--accent-gold)]/5 rounded-full blur-[80px] -z-10 pointer-events-none" />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Nombre Completo */}
@@ -77,7 +77,7 @@ export default function NewClientPage() {
                                 value={fullName}
                                 onChange={(e) => setFullName(e.target.value)}
                                 placeholder="Ej: Juan Pérez / Inmobiliaria Sur"
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         </div>
 
@@ -91,7 +91,7 @@ export default function NewClientPage() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="juan@correo.com"
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         </div>
 
@@ -105,7 +105,7 @@ export default function NewClientPage() {
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
                                 placeholder="+598 9X XXX XXX"
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
                             />
                         </div>
 
@@ -119,7 +119,7 @@ export default function NewClientPage() {
                                 onChange={(e) => setAddress(e.target.value)}
                                 rows={2}
                                 placeholder="Artigas 1234, Ciudad..."
-                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-blue)]/50 transition-colors resize-none"
+                                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors resize-none"
                             />
                         </div>
                     </div>
@@ -128,7 +128,7 @@ export default function NewClientPage() {
                         <button
                             type="submit"
                             disabled={isSaving}
-                            className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--accent-blue)] text-black font-semibold hover:bg-[var(--accent-blue)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] disabled:opacity-50"
+                            className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--accent-gold)] text-black font-semibold hover:bg-[var(--accent-gold)]/90 transition-all shadow-[0_0_15px_rgba(209,164,88,0.2)] disabled:opacity-50"
                         >
                             {isSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
                             {isSaving ? "Guardando..." : "Guardar Cliente"}
