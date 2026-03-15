@@ -18,7 +18,7 @@ const defaultSettings: SettingsData = {
     businessName: "Lasa Kitchens & Closets",
     rut: "211234560017",
     phone: "+598 99 123 456",
-    email: "hola@lasakitchens.com",
+    email: "lasa.kitchencorp@gmail.com",
     address: "Av. Italia 1234, Montevideo, Uruguay",
     website: "https://lasakitchens.com",
     schedule: {

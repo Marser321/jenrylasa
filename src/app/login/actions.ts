@@ -15,7 +15,7 @@ export async function login(formData: FormData) {
     // Por el momento simulamos un login exitoso y seteamos la cookie
     // para habilitar el acceso al panel admin (hasta que configuremos InsForge Users).
 
-    if (email === 'admin@lasa.com' && password === 'admin123') { // Mock temporal
+    if (email === 'lasa.kitchencorp@gmail.com' && password === 'admin123') { // Mock temporal
         const cookieStore = await cookies()
         // En el futuro, aca se guarda el token JWT real que devuelve InsForge
         cookieStore.set('lasa_admin_token', 'mock-valid-token', {

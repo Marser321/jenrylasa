@@ -130,7 +130,7 @@ export default function InvoicePage() {
                 </p>
                 <p>123 Luxury Lane, Design District</p>
                 <p>Miami, FL 33137</p>
-                <p>contact@lasakitchens.com</p>
+                <p>lasa.kitchencorp@gmail.com</p>
                 <p>+1 (555) LASA-WOOD</p>
               </div>
             </div>
